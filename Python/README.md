@@ -8,9 +8,9 @@
 - [Writing to a File](#writing-to-a-file)
 - [Modules](#modules)
     - [Beautiful Soup & Requests](#beautiful-soup--requests)
-	- [Pandas](#pandas)
-	- [PyMySQL](#pymysql)
-        - [SQLite3](#sqlite3)
+    - [Pandas](#pandas)
+    - [PyMySQL](#pymysql)
+    - [SQLite3](#sqlite3)
 
 
 ## Install
