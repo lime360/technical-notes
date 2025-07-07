@@ -10,6 +10,7 @@
     - [Beautiful Soup & Requests](#beautiful-soup--requests)
 	- [Pandas](#pandas)
 	- [PyMySQL](#pymysql)
+        - [SQLite3](#sqlite3)
 
 
 ## Install
@@ -147,4 +148,22 @@ cursor.execute(insert, (col1, col2, col3, col4))
 # commit & close connection
 connection.commit()
 connection.close()
+```
+
+### SQLite3
+```python
+# unlike pymysql, the sqlite3 module is preinstalled in python
+import sqlite3
+
+# connect/create a database
+con = sqlite3.connect("example.db")
+
+# queries
+cur = con.cursor()
+cur.execute("CREATE TABLE IF NOT EXISTS table (col1 TEXT, col2 TEXT, col3 TEXT col4 TEXT")
+cur.executemany("INSERT INTO table VALUES (?, ?, ?, ?)", [(col1, col2, col3, col4)])
+
+# commit & close connection
+con.commit()
+con.close()
 ```
