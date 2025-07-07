@@ -25,7 +25,15 @@ git rm -r --cached file.php
 # commit changes
 git commit -m "change note"
 
-# push file to Github
+# push file to Github (or a different remote)
 # remote will be the SSH link on your repo
 git push remote:master
+
+# create a tag
+git tag TAGNAME
+# or
+git tag -a TAGNAME -m "tag name"
+
+# push the tag to the desired remote
+git push remote TAGNAME
 ```
