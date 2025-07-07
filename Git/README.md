@@ -29,9 +29,7 @@ git commit -m "change note"
 # remote will be the SSH link on your repo
 git push remote:master
 
-# create a tag
-git tag TAGNAME
-# or
+# create a tag (a human-readable commit alias)
 git tag -a TAGNAME -m "tag name"
 
 # push the tag to the desired remote
