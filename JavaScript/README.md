@@ -93,17 +93,17 @@ var top = rect.top + window.scrollY;
 // expand based on content
 var textarea = document.querySelectorAll('textarea');
 textarea.forEach(function(box) {
-    var value = box.value;
-    var numLines = value.split(/\r\n|\r|\n/).length;
-    box.setAttribute("rows", numLines);
-  });
+   var value = box.value;
+   var numLines = value.split(/\r\n|\r|\n/).length;
+   box.setAttribute("rows", numLines);
+});
 ```
 
 ### Run after DOM is loaded
 ```Javascript
 document.addEventListener("DOMContentLoaded", function() {
    // code here
-}
+})
 ```
 
 ### Event Listeners
