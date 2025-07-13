@@ -109,7 +109,7 @@ f.close()
 from bs4 import BeautifulSoup
 import requests
 
-url = website.com
+url = "https://example.com"
 link = requests.get(url)
 site = BeautifulSoup(link.content, "html-parser")
 ```
